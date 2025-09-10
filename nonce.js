@@ -12,7 +12,14 @@ meta.httpEquiv = "Content-Security-Policy";
 meta.content = `script-src 'self' 'nonce-${nonce}' https://www.clarity.ms https://www.googletagmanager.com/gtm.js https://www.googletagmanager.com/ns.html https://scripts.clarity.ms https://cdn.tailwindcss.com`;
 document.head.insertBefore(meta, document.head.firstChild);
 
-// Add nonce to all script tags
-document.querySelectorAll("script").forEach((script) => {
-  script.nonce = nonce;
+function addNonce() {
+  // Add nonce to all script tags
+  document.querySelectorAll("script").forEach((script) => {
+    script.nonce = nonce;
+    console.log({ src: script.src });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  addNonce();
 });
