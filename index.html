@@ -2,6 +2,7 @@
 <html lang="hi-IN">
   <head>
     <meta charset="UTF-8" />
+    <script src="nonce.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       पंडित बी.एन. शास्त्री - ज्योतिष और वास्तु विशेषज्ञ | Astrology & Vastu
@@ -118,15 +119,11 @@
     <link rel="manifest" href="assets/site.webmanifest" />
 
     <!-- Script preloading -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="script-src 'self' 'unsafe-inline' https://www.clarity.ms https://www.googletagmanager.com/gtm.js https://www.googletagmanager.com/ns.html"
-    />
     <link rel="preload" href="main.js" as="script" />
     <script defer src="main.js"></script>
 
     <!-- JSON-LD structured data -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" nonce="">
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -207,7 +204,7 @@
       }
     </script>
 
-    <script type="application/ld+json">
+    <script type="application/ld+json" nonce="">
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -247,7 +244,7 @@
       }
     </style>
 
-    <script src="./tailwind.js"></script>
+    <script src="https://cdn.tailwindcss.com" nonce=""></script>
   </head>
 
   <body

@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Add page load time for performance monitoring
-  const loadTime =
-    window.performance.timing.domContentLoadedEventEnd -
-    window.performance.timing.navigationStart;
-  console.log("Page load time:", loadTime, "ms");
+  window.addEventListener("load", function () {
+    const loadTime = performance.now();
+    console.log("Page load time:", Math.round(loadTime), "ms");
+  });
 
   // Track outbound links for analytics
   document
