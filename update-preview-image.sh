@@ -31,7 +31,7 @@ convert -size 1200x630 xc:#ff5722 \
     "$SOURCE_IMAGE" -resize 300x300 -gravity center -geometry +0-80 -composite \
     -fill white -pointsize 60 -gravity north -annotate +0+80 "$WEBSITE_TITLE" \
     -fill white -pointsize 36 -gravity north -annotate +0+160 "$WEBSITE_SUBTITLE" \
-    -fill white -pointsize 24 -gravity south -annotate +0+40 "www.bnshastri.co.in" \
+    -fill white -pointsize 24 -gravity south -annotate +0+40 "www.bnshastri.com" \
     "$PREVIEW_IMAGE_PNG"
 
 # Create a square version specifically for WhatsApp (1:1 aspect ratio works better)
@@ -42,7 +42,7 @@ convert -size 1080x1080 xc:#ff5722 \
     "$SOURCE_IMAGE" -resize 400x400 -gravity center -geometry +0-100 -composite \
     -fill white -pointsize 60 -gravity north -annotate +0+100 "$WEBSITE_TITLE" \
     -fill white -pointsize 36 -gravity north -annotate +0+180 "$WEBSITE_SUBTITLE" \
-    -fill white -pointsize 24 -gravity south -annotate +0+50 "www.bnshastri.co.in" \
+    -fill white -pointsize 24 -gravity south -annotate +0+50 "www.bnshastri.com" \
     "$WHATSAPP_PREVIEW_PNG"
 
 # Create WebP versions

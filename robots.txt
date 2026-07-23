@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://bnshastri.co.in/sitemap.xml
-Host: https://bnshastri.co.in
+Sitemap: https://bnshastri.com/sitemap.xml
+Host: https://bnshastri.com
